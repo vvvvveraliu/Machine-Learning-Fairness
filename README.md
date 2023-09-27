@@ -16,10 +16,10 @@ This project studies the machine learning fariness to gain a better understandin
 * **Constrained Support Vector Machines (C-SVM) and Constrained Logistic Regression (CLR)** introduced in the paper [Maximizing accuracy under fairness constraints](https://arxiv.org/abs/1507.05259 ) 
 
 We further evaluate those three algorithms by looking into four metrics to more comprehensively assess the fairness of the models: 
-* **Accuracy** - measures the overall correctness of a model's predictions
-* **Calibration** - Calibration assesses whether the predicted probabilities from your model align with the actual outcomes. In the context of fairness, it's important to ensure that the predicted probabilities are well-calibrated across different groups, so that, for example, a predicted 70% probability of recidivism actually corresponds to a 70% likelihood of recidivism for all racial groups
-* **Parity** - Parity metrics aim to assess whether different groups are treated equally by the model
-* **Equality of odds** -  It evaluates whether false positives and false negatives are balanced across different groups
+1. **Accuracy** - measures the overall correctness of a model's predictions
+2. **Calibration** - Calibration assesses whether the predicted probabilities from your model align with the actual outcomes. In the context of fairness, it's important to ensure that the predicted probabilities are well-calibrated across different groups, so that, for example, a predicted 70% probability of recidivism actually corresponds to a 70% likelihood of recidivism for all racial groups
+3. **Parity** - Parity metrics aim to assess whether different groups are treated equally by the model
+4. **Equality of odds** -  It evaluates whether false positives and false negatives are balanced across different groups
 
 ## Dataset:
 We use the [COMPAS dataset](https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis) (Correctional Offender Management Profiling for Alternative Sanctions) for this project: 
