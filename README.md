@@ -21,12 +21,20 @@ We further evaluate those three algorithms by looking into four metrics to more 
 * Equality of odds -  It evaluates whether false positives and false negatives are balanced across different groups
 
 ## Dataset:
-We use the COMPAS dataset (Correctional Offender Management Profiling for Alternative Sanctions) for this project: (https://www.propublica.org/datastore/dataset/compas-recidivism-risk- score-data-and-analysis) 
+We use the [COMPAS dataset](https://www.propublica.org/datastore/dataset/compas-recidivism-risk-score-data-and-analysis) (Correctional Offender Management Profiling for Alternative Sanctions) for this project: 
 
 This dataset contains  the criminal history, jail and prison time, demographics, and COMPAS risk scores for defendants from Broward County from 2013 and 2014. The ground truth on whether 
 or not these individuals actually recidivated within two years after the screening is also being collected. Recidivism is defined as a new arrest within two years. ProPublica’s analysis shows that the COMPAS risk scores are discriminatory against race and gender.
 
 * Binary class label (y): "two_year_recid" column, indicating whether the defendant recificated within two years
 * Binary sensitive attribute (z): "race" column, Caucasian and African-American
+
+## Result - LFR
+|                  | African American                 | Caucasian       |
+| ---------------  | ---------------------------------| --------------- |
+| Calibration      | 83.4%                            | 84.5%           |
+| Equality of odds | positive: 77.2%, negative: 91.1% | positive: 99.6%, negative:73.2% |
+| Parity           | 46.8%                            | 57.9%           |
+
 
   
