@@ -9,7 +9,16 @@ Some considerations in machine learning fairness include:
 * Fairness Metrics: Various fairness metrics are used to assess and measure bias in machine learning models. Common metrics include disparate impact, equal opportunity, and demographic parity. These metrics help quantify the fairness of a model's predictions.
 
 ## Summary: 
-This project studies the machine learning fariness by implementing the algorithms of Learning Fair Representations (LFR), Constrained Support Vector Machines (C-SVM) and Constrained Logistic Regression (CLR). We further evaluate those three algorithms by looking into four matrices to take fairness into account: accuracy, calibration, parity and equality of odds.
+This project studies the machine learning fariness to gain a better understanding of the trade-off between accuracy and fairness by implementing the following methodlogies
+
+* The algorithms of Learning Fair Representations (LFR) introduced in the paper [A2-Maximizing accuracy under fairness constraints](https://arxiv.org/abs/1507.05259 ) 
+* Constrained Support Vector Machines (C-SVM) and Constrained Logistic Regression (CLR).
+
+We further evaluate those three algorithms by looking into four metrics to more comprehensively assess the fairness of the models: 
+* Accuracy - measures the overall correctness of a model's predictions
+* Calibration - Calibration assesses whether the predicted probabilities from your model align with the actual outcomes. In the context of fairness, it's important to ensure that the predicted probabilities are well-calibrated across different groups, so that, for example, a predicted 70% probability of recidivism actually corresponds to a 70% likelihood of recidivism for all racial groups
+* Parity - Parity metrics aim to assess whether different groups are treated equally by the model
+* Equality of odds -  It evaluates whether false positives and false negatives are balanced across different groups
 
 ## Dataset:
 We use the COMPAS dataset (Correctional Offender Management Profiling for Alternative Sanctions) for this project: (https://www.propublica.org/datastore/dataset/compas-recidivism-risk- score-data-and-analysis) 
@@ -20,8 +29,4 @@ or not these individuals actually recidivated within two years after the screeni
 * Binary class label (y): "two_year_recid" column, indicating whether the defendant recificated within two years
 * Binary sensitive attribute (z): "race" column, Caucasian and African-American
 
-
-
-* The Learning Fair Representations (LFR) methods from Zemel et.al
-* Constrained Support Vector Machines (C-SVM) and Constrained Logistic Regression (CLR) from Zafar et.al.
   
