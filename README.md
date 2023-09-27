@@ -1,7 +1,7 @@
 # Machine Learning Fairness Exploration using LFR, C-LR, and C-SVM
 
 ## Background: 
-Machine Learning Fairness refers to correcting the unfairness for certain groups or individuals in machine learning powered predictions. Fairness is a 
+*Machine Learning Fairness* refers to correcting the unfairness for certain groups or individuals in machine learning powered predictions. Fairness is a 
 critical consideration because machine learning systems have the potential to perpetuate and amplify existing societal biases if not designed and deployed carefully.
 Some considerations in machine learning fairness include:
 * Bias and Fairness: Bias can manifest in various forms, including disparate impact, disparate treatment, and algorithmic bias. Disparate impact occurs when a model's predictions or decisions disproportionately affect different groups. Disparate treatment refers to explicit bias, where the model treats different groups unfairly. Algorithmic bias refers to the systematic and unfair discrimination present in model predictions.
