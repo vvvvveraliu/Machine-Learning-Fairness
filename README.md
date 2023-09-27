@@ -11,8 +11,8 @@ Some considerations in machine learning fairness include:
 ## Summary: 
 This project studies the machine learning fariness to gain a better understanding of the trade-off between accuracy and fairness by implementing the following methodlogies
 
-* The algorithms of Learning Fair Representations (LFR) introduced in the paper [A2-Maximizing accuracy under fairness constraints](https://arxiv.org/abs/1507.05259 ) 
-* Constrained Support Vector Machines (C-SVM) and Constrained Logistic Regression (CLR).
+* The algorithms of Learning Fair Representations (LFR) introduced in the paper [Learning Fair Representations](http://proceedings.mlr.press/v28/zemel13.html) 
+* Constrained Support Vector Machines (C-SVM) and Constrained Logistic Regression (CLR) introduced in the paper [Maximizing accuracy under fairness constraints](https://arxiv.org/abs/1507.05259 ) 
 
 We further evaluate those three algorithms by looking into four metrics to more comprehensively assess the fairness of the models: 
 * Accuracy - measures the overall correctness of a model's predictions
