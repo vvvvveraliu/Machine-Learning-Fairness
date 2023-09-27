@@ -29,12 +29,22 @@ or not these individuals actually recidivated within two years after the screeni
 * Binary class label (y): "two_year_recid" column, indicating whether the defendant recificated within two years
 * Binary sensitive attribute (z): "race" column, Caucasian and African-American
 
-## Result - LFR
+## Result (C-LR)
+Overall accuracy: 83.84% 
 |                  | African American                 | Caucasian       |
 | ---------------  | ---------------------------------| --------------- |
 | Calibration      | 83.4%                            | 84.5%           |
 | Equality of odds | positive: 77.2%, negative: 91.1% | positive: 99.6%, negative:73.2% |
 | Parity           | 46.8%                            | 57.9%           |
+
+## Result - C-SVM
+Overall accuracy: 71%
+|                  | African American                 | Caucasian       |
+| ---------------  | ---------------------------------| --------------- |
+| Calibration      | 70.4%                            | 72.4%           |
+| Equality of odds | positive: 80%, negative: 20%     | positive: 47.5%, negative:7.9% |
+| Parity           | 46.5%                            | 22.8%           |
+
 
 
   
