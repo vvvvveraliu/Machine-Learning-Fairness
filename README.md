@@ -1,16 +1,15 @@
 # Machine Learning Fairness Exploration using LFR, C-LR, and C-SVM
 
 ## Background: 
-Machine Learning Fairness refers to correcting the unfairness for certain groups or individuals in machine learning powered predictions. Fairness could be introduced in common 
-machine learning practices. For example, unfair sampling or labeling in the training data causes selection bias. If a bank has been refusing credit to minority people without 
-assessing them, the records of minority people are less sampled in the training data set. 
+Machine Learning Fairness refers to correcting the unfairness for certain groups or individuals in machine learning powered predictions. Fairness is a 
+critical consideration because machine learning systems have the potential to perpetuate and amplify existing societal biases if not designed and deployed carefully.
+Some considerations in machine learning fairness include:
+* Bias and Fairness: Bias can manifest in various forms, including disparate impact, disparate treatment, and algorithmic bias. Disparate impact occurs when a model's predictions or decisions disproportionately affect different groups. Disparate treatment refers to explicit bias, where the model treats different groups unfairly. Algorithmic bias refers to the systematic and unfair discrimination present in model predictions.
+* Protected Attributes: These are attributes like race, gender, age, sexual orientation, or disability status that are protected by anti-discrimination laws. Machine learning models should not make decisions that discriminate against individuals based on these attributes.
+* Fairness Metrics: Various fairness metrics are used to assess and measure bias in machine learning models. Common metrics include disparate impact, equal opportunity, and demographic parity. These metrics help quantify the fairness of a model's predictions.
 
-## Fairness Approach:
-Threre are many different ways to handle the fairness issue in different phases of machine learning:
-1. Preprocessing: we can modiy the distribution of the training data
-2. Inprocessing: we can modify the cost function of the constraint of the learning algorithm
-3. Post-processing: we can modify the prediction outcomes
-4. Causal reasoning: we can use the concepts of counterfactual and interventional fairness
+## Project Summary:
+This project studies the machine learning fariness by implementing the algorithms of Learning Fair Representations (LFR), Constrained Support Vector Machines (C-SVM) and Constrained Logistic Regression (CLR) on the COMPAS dataset. We further evaluate and compare those three algorithms by looking into four matrices: accuracy, calibration, parity and equality of odds.
 
 ## Dataset:
 We use the COMPAS dataset (Correctional Offender Management Profiling for Alternative Sanctions) for this project: 
